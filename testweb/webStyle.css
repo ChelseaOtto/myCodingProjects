@@ -1,0 +1,70 @@
+/* CSS External Styling to form */
+
+/* Overall form format*/
+.popiform{
+	margin: 2rem auto;
+	max-width: 700px;
+	padding: 2rem;
+}
+
+/* Styling for Submit button */
+.squareSubmit {
+		input[type = submit], 
+		background-color: red;
+		border: solid;
+		color: white;
+		padding: 16px 32px;
+		margin: 30px 270px;
+		text-align: center;
+		display: inline-block;
+		width: auto;
+		text-align: center;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+/* Heading */
+h2 {
+	font-family: "Arial";
+	text-align: left-center;
+	font-size: 26px;
+}
+	
+/* Body */
+body {
+	background-image: url('./image/formImage.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: "Arial";
+	font-size: 14px;
+}
+
+/* Selecting one option from checkboxes */
+.oneOption{
+	color: red;
+	font-size: 14px;
+	display: none;
+}
+
+/* Input Boxes */
+input{
+	width: 100%
+	padding: 10px;
+	margin-top: 10px;
+}
+
+/* Submit button styling */
+input[type = submit]{
+	margin-center: 250px;
+	width: 20%;
+	height: 10%;
+	background: red;
+	color: white;
+	border: solid;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+
+

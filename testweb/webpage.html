@@ -1,0 +1,175 @@
+
+<?php
+	include_once 'testweb/backgroundprocess.php';
+?> 
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- External CSS Styling -->
+<link rel="stylesheet" href="webStyle.css"/>
+
+<meta charset = "UTF-8">
+
+<title> Web Page Form </title>
+
+
+<script type = "text/javascript">
+	<!-- Internal Javascript Validation -->
+	
+	<!-- Validates all input fields as mandatory -->
+	function checkblanks() {
+	if (document.getElementById('userName').value == "") {
+		alert('Please insert your name');
+		document.getElementById('userName').style.borderColor = "red";
+		return false;
+		}
+		
+	if (document.getElementById('userSurname').value == "") {
+		alert('Please insert your surname');
+		document.getElementById('userSurname').style.borderColor = "red";
+		return false;
+		}
+		
+	if (document.getElementById('userEmail').value == "") {
+		alert('Please insert your email address');
+		document.getElementById('userEmail').style.borderColor = "red";
+		return false;
+		}
+	}
+	
+	<!-- Validates email format -->
+	function validate() 
+	{
+		var email = document.getElementById('userEmail').value;
+		var regex = /^([a-z A-Z 0-9 \. _]+)@([a-z A-Z]+).([a-z A-Z]{2,6})(.[a-z]{2,6})?$/
+		if(email.trim()=="")
+		{
+			alert('Please insert a valid email address');
+		}
+		else if ((regex.test(email)))
+		{
+			alert('Email submitted successfully')
+		}
+		else
+		{
+			alert('Invalid email address');
+		}
+	}
+	
+	<!-- Validates checkboxes -->
+	function boxticked() {
+		var unsubscribe = document.getElementById('Unsubscribe').checked;
+		var suspend = document.getElementById('Suspend').checked;
+		var deleted = document.getElementById('Delete').checked;
+		
+		if(unsubscribe == false && suspend == false && deleted == false) {
+			alert('Please select an option');
+			return false;
+			}
+			
+		else{
+			return true;
+		}
+	}
+	
+</script>
+
+		
+</head>
+
+<body> 
+	
+	<!-- Head title -->
+	<div class = "header">
+		<h2 align = center>Popi Act Form</h2> 
+	</div>
+	
+	<form id = "form" class = "popiform" name = "Details" onsubmit = "return checkblanks(); return boxticked()" action = "backgroundprocess.php" method = "post" autocomplete = "off;">
+	
+	<!-- External JS -->
+	<script src = "validation.js"></script>
+	
+	
+	<!-- Forms Layout -->
+	
+	<!-- Information -->
+	
+	<fieldset style = "border:3px solid black";>
+	<legend><b> Information </b></legend> 
+	<div class = "formBox">
+	
+	<table>
+	<tr>
+		<td> First Name: 
+					<input type = "text" id = "userName" name = "fname" class = "box1">
+					<label for = "fname"> 
+			
+			Last Name:  
+					<input type = "text" id = "userSurname" name = "lname" class = "box2"><br><br/>
+					<label for = "lname"> 
+		</td> <br/>
+	
+	</tr>
+	
+	<tr>
+		<td> Email Address: <input type = "email" id = "userEmail" name = "email" class = "box3"><br><br/>
+							<label for = "email"> 
+		</td>
+	</tr>
+	
+	</table>
+	
+	
+	<tr>
+		<td> The Information you provide will be used in accordance with the terms of our <a href = "policy.php">Privacy Policy.</a></td> <br></br/>
+	</tr>
+	</div> <br>
+	</fieldset>	<br></br>
+	
+	
+	<!-- Global Preferences Layout -->
+	
+	<fieldset style = "border: 3px solid black";>
+	<legend><b> Global Preferences </b></legend>
+	<div class = "formBox" id = "result">
+	
+	<table>
+	<tr>
+		<td>
+		<!-- Used to validate checkboxes -->
+		<div class = "oneOption">Please select atleast one option:</div>
+		
+		<input type = "checkbox" class = "check" id = "Unsubscribe" name = "choices[]" value = "Unsubscribe from all our emails"> Unsubscribe from All
+			
+		<input type = "checkbox" class = "check" id = "Suspend" name = "choices[]" value = "Suspend your email for 90 days"> Suspend Email for 90 Days <br></br>
+		</td>
+	</tr>
+		
+	<tr>
+		<td>
+		<input type = "checkbox" class = "check" id = "Delete" name = "choices[]" value = "Delete all your information"> Delete All My Information <br></br>
+		</td>
+	</tr>
+	
+	</table> <br></br>
+	</fieldset> <br>
+	
+	
+	<!-- Contact information -->
+	<tr>
+	<td>
+		Recieve an email outside of these subscription parameters? <br>
+		<a href = "contact.php">Contact Us</a> for more information on why you received this communication <br>
+	</td>
+	</tr>
+	
+	<td colspan = "3" style = "text-align: center"> <input type = "Submit" value = "Submit" id = "validate" onclick = "validate()" class = "squareSubmit" ></td>
+	
+	</div>
+	</form>
+	
+</body>
+
+</html>
