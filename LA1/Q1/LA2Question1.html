@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> Javascript Program </title>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+		
+		<style> 
+			
+		</style>
+		
+		
+		<script type = "text/javascript"> 
+			function add()
+			{	
+				option1 = document.getElementById('option1');
+				n1 = document.getElementById('num1');
+				n2 = document.getElementById('num2');
+				result = Number(n1.value) + Number(n2.value);
+				
+				document.getElementById('answer').value = result;
+				document.getElementById('answer').style.backgroundColor = 'red';
+			}
+			
+			function subtract()
+			{
+				option2 = document.getElementById('option2');
+				n1 = document.getElementById('num1');
+				n2 = document.getElementById('num2');
+				result = Number(n1.value) - Number(n2.value);
+				
+				document.getElementById('answer').value = result;
+				document.getElementById('answer').style.backgroundColor = 'yellow';
+				
+			}
+			
+			function multiply()
+			{
+				option3 = document.getElementById('option3');
+				n1 = document.getElementById('num1');
+				n2 = document.getElementById('num2');
+				result = Number(n1.value) * Number(n2.value);
+				
+				document.getElementById('answer').value = result;
+				document.getElementById('answer').style.backgroundColor = 'green';
+			}
+			
+			function divide()
+			{
+				option4 = document.getElementById('option4');
+				n1 = document.getElementById('num1');
+				n2 = document.getElementById('num2');
+				result = Number(n1.value) / Number(n2.value);
+				
+				document.getElementById('answer').value = result;
+				document.getElementById('answer').style.backgroundColor = 'blue';
+			}
+		</script>
+		
+	</head>
+	
+	<body>
+		<h1><center> RB InfoTech Calculator </center></h1>
+		<form action = "LA2Question1.html" autocomplete = "off">
+		
+		<fieldset>
+		<table>
+		<tr>
+		<th> <label for = "num1"> First </br> Number: </label></th>
+		<td> <input type = "text" id = "num1" name = "num1"/></td>	
+		<td> <input type="radio" onclick = "add()" id="option1" name="option1" value="Addition">
+		<label for = "option1"> Addition </label> </td> <tr>
+		
+		<tr>
+		<th> <label for = "num2"> Second </br> Number: </label></th>
+		<td> <input type = "text" id = "num2" name = "num2"/></td>	
+		<td> <input type="radio" onclick = "subtract()" id="option2" name="option2" value="Subtraction"> <label for = "option2"> Subtraction </label> </td></tr>
+		
+		<tr>
+		<td><td>
+		<td> <input type="radio" onclick = "multiply()" id="option3" name="option3" value="Multiplication"> <label for = "option3"> Multiplication </label> </td></tr>
+		
+		<tr>
+		<th> <label for = "result"> Answer: </label></th> 
+		<td> <input type = "text" id = "answer"  name = "answer"/></td>	
+		
+		<td> <input type="radio" onclick = "divide()" id="option4" name="option4" value="Division"> <label for = "option4"> Division </label> </td></tr>
+		
+		
+		<tr> <td> <button id = "btn1" > Reset </button> </td></tr>
+		
+		</table>
+		</fieldset>
+		</form>
+	</body>
+</html>
