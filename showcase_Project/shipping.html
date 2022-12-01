@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="ship.css">
+
+</head>
+<body>
+
+ <section id = "header">
+   <a href = "#"><img src = "images/header/logo.png" class ="logo" alt = ""></a>
+
+   
+   <div id = "mobile">
+     <i id = "bars" class = "fas fa-outdent"></i>
+     <a href = "cart.php"><i class="far fa-shopping-bag"></i></a>
+   </div>
+   </section>
+
+<div class="container">
+
+    <form action="">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span>full name :</span>
+                    <input type="text" >
+                </div>
+                <div class="inputBox">
+                    <span>phone number :</span>
+                    <input type="num" >
+                </div>
+                <div class="inputBox">
+                    <span>address :</span>
+                    <input type="text" >
+                </div>
+                <div class="inputBox">
+                    <span>city :</span>
+                    <input type="text" >
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span>province :</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>zip code :</span>
+                        <input type="text" >
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">delivery details</h3>
+
+                <div class="inputBox">
+                    <span>Special Delivery instruction  :</span>
+                    <textarea rows="2" cols="50" name="info" style="border:1px solid #ccc; "> </textarea>
+                </div>
+                <div class="inputBox">
+                    <span>Delivery Date :</span>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <span>Delivery Time :</span>
+                    <input type="time">
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+						<span>Payment Type :</span>
+                        <select name="op" id="op" placeholder="Choose Payment type">
+						<option value="" disabled selected>Select your option</option>
+						<option value="op1">Cash</option>
+						<option value="op2">Card</option>
+						
+						</select>
+                    </div>
+					 <div class="inputBox">
+					 <div class="cart-wrapper">
+					                        <div class="subtotal">Subtotal: $0.00</div>
+											</div>
+					 
+					</div>
+					
+
+                </div>
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="Submit" class="submit-btn">
+ 
+    </form>
+	
+
+</div>    
+ <script src="script.js"></script>  
+ <footer class = "section1">
+		<div class = "column">
+			<h4> Content </h4>
+			<p> <strong>Address:</strong> Vineyard Ave & Valley Road, Blackheath, Cape Town, 7580, South Africa</p>
+			<p> <strong>Phone:</strong> 021 905 1530 </p>
+			<p> <strong>Hours:</strong> 9:00 - 16:30, Mon - Fri </p>
+			<div class = "following">
+				<h4> Follow Us </h4>
+				<div class = "icon">
+					<i class = "fab fa-facebook-f"></i>
+					<i class = "fab fa-twitter"></i>
+					<i class = "fab fa-instagram"></i>
+					<i class = "fab fa-pinterest-p"></i>
+					<i class = "fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "column">
+			<h4> About </h4>
+			<a href = "about.html"> About Us </a>
+			<a href = "checkout.php"> Delivery Information </a>
+			<a href = "#"> Privacy Policy </a>
+			<a href = "#"> Terms and Conditions </a>
+			<a href = "contact.html"> Contact Us </a>
+		</div>
+		
+		<div class = "column">
+			<h4> My Account </h4>
+			<a href = "register.php"> Sign Up </a>
+			<a href = "cart.php"> View Cart </a>
+			<a href = "cart.php"> My Wishlist </a>
+			<a href = "checkout.php"> Track My Order </a>
+			<a href = "contact.html"> Help </a>
+		</div>
+		
+		<div class = "column installing">
+			<h4> Install App </h4>
+			<p> From App Store or Google Play </p>
+			<div class = "rows">
+			<img src = "images/footer/apps.png" alt = "">
+			</div>
+			<p> Secure Payment Gateways </p>
+			<img src = "images/footer/payment.png" alt = "">
+		</div>
+		<div class = "copyright">
+			<p> @ 2022, My Body Positive Ecommerce Website </p>
+		</div>
+	</footer>
+</body>
+</html>

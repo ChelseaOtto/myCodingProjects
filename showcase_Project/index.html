@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/8f27d68390.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+     	<section id = "header">
+		<a href = "#"><img src = "images/header/logo.png" class ="logo" alt = ""></a>
+		
+		<div>
+			<ul id = "navbar">
+				<li><a href = "fontend.html"> Home </a><li>
+				<li><a href = "about.html"> About </a><li>
+				<li><a href = "contact.html"> Contact Us </a><li>
+				
+				<!-- mobile view -->
+				<li id = "lg-bag"><a href = "shop.html"><i class="far fa-shopping-bag fa-2x"></i></a></li>
+				<a href = "#" id = "closed"><i class = "far fa-times"></i></a>
+			</ul>
+		</div>
+		
+		
+		
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+      <div class="cart-box">
+        <div class="cart-icon">
+          <i class="fas fa-cart-arrow-down fa-2x"></i>
+        </div>
+        <div class="whole-cart-window hide">
+          <h2>Shopping Bag</h2>
+          <div class="cart-wrapper">
+            <!-- <div class="cart-item">
+                       <img src="\img\pic5.jpeg"> 
+                       <div class="details">
+                           <h3>Item Name</h3>
+                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            <span class="quantity">Quantity: 1</span>
+                               <span class="price">Price: $23.44</span>
+                           </p>
+                       </div>
+                       <div class="cancel"><i class="fas fa-window-close"></i></div>
+                    </div> -->
+            <!-- item 2 -->
+            <!-- <div class="cart-item">
+                        <img src="\img\pic5.jpeg"> 
+                        <div class="details">
+                            <h3>Item Name</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                             <span class="quantity">Quantity: 1</span>
+                                <span class="price">Price: $23.44</span>
+                            </p>
+                        </div>
+                        <div class="cancel"><i class="fas fa-window-close"></i></div>
+                     </div> -->
+          </div>
+          <div class="subtotal">Subtotal: $0.00</div>
+          <div class="checkout" onclick="location.href='shipping.html';">Delivery</div>
+         
+        </div>
+      </div>
+    </header>
+	
+	
+	
+	
+	
+    <section class="shop-section">
+      <div class="card-wrapper">
+        <div data-id="1" class="card-item">
+          <img src="images/products/hoodie.png" />
+          <div class="details">
+            <h3>Baby Blue Hoodie</h3>
+            <p>
+              <span
+                >Light blue gym hoodie</span
+              >
+
+              <span class="price">Price: R150.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- item 2 -->
+        <div data-id="2" class="card-item">
+          <img src= "images/products/pic8.png" />
+          <div class="details">
+            <h3>Stylish Gym Shorts</h3>
+            <p>
+              <span>
+			   Redx flexi shorts
+              </span>
+
+              <span class="price">Price: R130.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 3 -->
+        <div data-id="3" class="card-item">
+          <img src= "images/products/pic11.png" />
+          <div class="details">
+            <h3>Midnight Blue Gym Set</h3>
+            <p>
+              <span
+                > 2 piece polyester gym  set.</span
+              >
+
+              <span class="price">Price: R320.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 4 -->
+        <div data-id="4" class="card-item">
+          <img src="images/products/set2.jpg" />
+          <div class="details">
+            <h3>Nylon Gym Set</h3>
+            <p>
+              <span>
+                Nylon Gym Set
+              </span>
+
+              <span class="price">Price: R350.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+        <!-- product 5 -->
+        <div data-id="5" class="card-item">
+          <img src="images/products/pic4.png" />
+          <div class="details">
+            <h3> Mix Tights </h3>
+            <p>
+              <span
+                > Black and grey mix tights</span
+              >
+              <span class="price">Price: R250.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 6 -->
+        <div data-id="6" class="card-item">
+          <img src="images/products/pic9.png" />
+          <div class="details">
+            <h3> Sports Bra</h3>
+            <p>
+              <span>
+                Comfortable flex sport bra 
+              </span>
+
+              <span class="price">Price: R220.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 7 -->
+        <div data-id="7" class="card-item">
+          <img src="images/products/pic5.png" />
+          <div class="details">
+            <h3>Flex Crop Top</h3>
+            <p>
+              <span>
+                Blue crop yoga top 
+              </span>
+
+              <span class="price">Price: R90.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 8 -->
+        <div data-id="8" class="card-item">
+          <img src="images/products/pic6.png"/>
+          <div class="details">
+            <h3>Black Yoga Tank Top</h3>
+            <p>
+              <span
+                >Flexible Tank Top</span
+              >
+
+              <span class="price">Price: R76.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- product 9 -->
+
+        <div data-id="9" class="card-item">
+          <img src= "images/products/pic7.jpg" />
+          <div class="details">
+            <h3> Fashion Icon Jacket</h3>
+            <p>
+              <span
+                >Purple Cotton Jacket.</span
+              >
+
+              <span class="price">Price: R360.00</span>
+              <span class="add-to-cart-btn">Add To Cart</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+	<footer class = "section1">
+		<div class = "column">
+			<h4> Content </h4>
+			<p> <strong>Address:</strong> Vineyard Ave & Valley Road, Blackheath, Cape Town, 7580, South Africa</p>
+			<p> <strong>Phone:</strong> 021 905 1530 </p>
+			<p> <strong>Hours:</strong> 9:00 - 16:30, Mon - Fri </p>
+			<div class = "following">
+				<h4> Follow Us </h4>
+				<div class = "icon">
+					<i class = "fab fa-facebook-f"></i>
+					<i class = "fab fa-twitter"></i>
+					<i class = "fab fa-instagram"></i>
+					<i class = "fab fa-pinterest-p"></i>
+					<i class = "fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "column">
+			<h4> About </h4>
+			<a href = "about.html"> About Us </a>
+			<a href = "checkout.php"> Delivery Information </a>
+			<a href = "#"> Privacy Policy </a>
+			<a href = "#"> Terms and Conditions </a>
+			<a href = "contact.html"> Contact Us </a>
+		</div>
+		
+		<div class = "column">
+			<h4> My Account </h4>
+			<a href = "register.php"> Sign Up </a>
+			<a href = "cart.php"> View Cart </a>
+			<a href = "cart.php"> My Wishlist </a>
+			<a href = "checkout.php"> Track My Order </a>
+			<a href = "contact.html"> Help </a>
+		</div>
+		
+		<div class = "column installing">
+			<h4> Install App </h4>
+			<p> From App Store or Google Play </p>
+			<div class = "rows">
+			<img src = "images/footer/apps.png" alt = "">
+			</div>
+			<p> Secure Payment Gateways </p>
+			<img src = "images/footer/payment.png" alt = "">
+		</div>
+		<div class = "copyright">
+			<p> @ 2022, My Body Positive Ecommerce Website </p>
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
