@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset = "UTF-8" name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title> My Ecommerce Website </title>
+	
+	<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	
+	
+	<link rel = "stylesheet" href = "styling.css">
+</head>
+
+<body>
+	
+	<section id = "header">
+		<a href = "#"><img src = "images/logo/otherlogo.png" class ="logo" alt = ""></a>
+		
+		<div>
+			<ul id = "navbar">
+				<li><a href = "main.html"> Home </a><li>
+				<li><a class = "active" href = "about.html"> About </a><li>
+				<li><a href = "contact.html"> Contact Us </a><li>
+				<li id = "lg-bag"><a href = "cart.php"><i class="far fa-shopping-bag"></i></a></li>
+				<a href = "#" id = "closed"><i class = "far fa-times"></i></a>
+			</ul>
+		</div>
+		<div id = "mobile"> 
+			<i id = "bars" class = "fas fa-outdent"></i>
+			<a href = "cart.php"><i class="far fa-shopping-bag"></i></a>
+		</div>
+	</section>
+	
+
+	<section id = "pageHeader" class = "aboutHeader">
+		<h2><center> About Us </center></h2>
+	</section>
+	
+	
+	
+	<section id = "aboutIt" class = "section1">
+		 <img src = "images/about/p1.jpg" alt = "">
+		 <div>
+			<h2> Who we are!</h2>
+			<p> We are a family owned business who specializes
+			in providing you with all necessary groceries you may need at low costs, 
+			wherever and whenever you need it.</p>
+			<abbr title = ""> Save more with our loyalty card and earn points to get better deals! </abbr>
+		 </div>
+	</section>
+	
+	
+	<section id = "features" class = "section1">
+		<div class = "featuredBox">
+				<img src = "images/features/delivery.png" alt = "">
+				<h6> Fast Delivery </h6>
+		</div>
+		
+		<div class = "featuredBox">
+				<img src = "images/features/onlineshop.png" alt = "">
+				<h6> Online Shopping </h6>
+		</div>
+		
+		<div class = "featuredBox">
+				<img src = "images/features/onlinepayments.png" alt = "">
+				<h6> Secure Payments </h6>
+		</div>
+		
+		<div class = "featuredBox">
+				<img src = "images/features/deals.png" alt = "">
+				<h6> Save Money </h6>
+		</div>
+		
+		<div class = "featuredBox">
+				<img src = "images/features/card.png" alt = "">
+				<h6> Loyalty Card </h6>
+		</div>
+		
+		<div class = "featuredBox">
+				<img src = "images/features/happycustomers.png" alt = "">
+				<h6> Satisfied Customers </h6>
+		</div>
+	</section>
+	
+	
+	<section id = "nletter" class = "section1 sectionM1">
+		<div class = "ntext">
+			<h4> Sign Up For Our Newsletters</h4>
+			<p> Get E-mail updates on our latest stock and <span> deals! </span></p>
+		</div>
+		<div class = "form">
+		<form action = "message.php" method = "POST">
+			<input type = "email" name = "eName" placeholder = "Your email address"> 
+			<button type = "submit" name = "submit" class = "normal"> Sign Up </button>
+		</div>
+		</form> 
+	</section>
+	
+	
+	<footer class = "section1">
+		<div class = "column">
+			<h4> Content </h4>
+			<p> <strong>Address:</strong> Vineyard Ave & Valley Road, Blackheath, Cape Town, 7580, South Africa</p>
+			<p> <strong>Phone:</strong> 021 905 1530 </p>
+			<p> <strong>Hours:</strong> 9:00 - 16:30, Mon - Sat </p>
+			<div class = "following">
+				<h4> Follow Us </h4>
+				<div class = "icon">
+					<i class = "fab fa-facebook-f"></i>
+					<i class = "fab fa-twitter"></i>
+					<i class = "fab fa-instagram"></i>
+					<i class = "fab fa-pinterest-p"></i>
+					<i class = "fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "column">
+			<h4> About </h4>
+			<a href = "about.html"> About Us </a>
+			<a href = "checkout.php"> Delivery Information </a>
+			<a href = "#"> Privacy Policy </a>
+			<a href = "#"> Terms and Conditions </a>
+			<a href = "contact.html"> Contact Us </a>
+		</div>
+		
+		<div class = "column">
+			<h4> My Account </h4>
+			<a href = "register.php"> Sign Up </a>
+			<a href = "cart.php"> View Cart </a>
+			<a href = "cart.php"> My Wishlist </a>
+			<a href = "checkout.php"> Track My Order </a>
+			<a href = "contact.html"> Help </a>
+		</div>
+		
+		<div class = "column installing">
+			<h4> Install App </h4>
+			<p> From App Store or Google Play </p>
+			<div class = "rows">
+			<img src = "images/footer/apps.png" alt = "">
+			</div>
+			<p> Secure Payment Gateways </p>
+			<img src = "images/footer/payment.png" alt = "">
+		</div>
+		<div class = "copyright">
+			<p> @ 2022, My Ecommerce Website </p>
+		</div>
+	</footer>
+	
+	
+	
+	
+	<script src = "script.js"></script>
+</body>
+
+</html>

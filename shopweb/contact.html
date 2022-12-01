@@ -1,0 +1,164 @@
+<?php 
+
+session_start();
+//include('server.php')
+//include('message.php')
+
+?>
+
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset = "UTF-8" name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title> My Ecommerce Website </title>
+	
+	<link rel = "stylesheet" href = "https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
+	
+	<link rel = "stylesheet" href = "styling.css">
+</head>
+
+<body>
+	
+	<section id = "header">
+		<a href = "#"><img src = "images/logo/otherlogo.png" class ="logo" alt = ""></a>
+		
+		<div>
+			<ul id = "navbar">
+				<li><a href = "main.html"> Home </a><li>
+				<li><a href = "about.html"> About </a><li>
+				<li><a class = "active" href = "contact.html"> Contact Us </a><li>
+				<li id = "lg-bag"><a href = "cart.php"><i class="far fa-shopping-bag"></i></a></li>
+				<a href = "#" id = "closed"><i class = "far fa-times"></i></a>
+			</ul>
+		</div>
+		<div id = "mobile"> 
+			<i id = "bars" class = "fas fa-outdent"></i>
+			<a href = "cart.php"><i class="far fa-shopping-bag"></i></a>
+		</div>
+	</section>
+	
+	
+	<section id = "pageHeader" class = "aboutHeader">
+		<h2><center> Contact Us </center></h2>
+		<p><center> Need help! We've got you covered, just leave us a message. </center></p>
+	</section>
+	
+	<section id = "contactDetails" class = "section1"> 
+		<div class = "details"> 
+		<span> GET IN TOUCH </span>
+		 <h2> Vist our store's location or contact us today </h2>
+		 <h3> Main Store </h3>
+		 <div> 
+			<li>
+				<i class = "fal fa-map"></i>
+				<p> Vineyard Ave, Blackheath, 7580, Cape Town, South Africa </p>
+			</li>
+			<li>
+				<i class = "far fa-envelope"></i>
+				<p> austinvillesupermarket@gmail.com </p>
+			</li>
+			<li>
+				<i class = "fas fa-phone-alt"></i>
+				<p> 021 905 1530 </p>
+			</li>
+			<li>
+				<i class = "far fa-clock"></i>
+				<p> 9:00 - 16:30 </p>
+			</li>
+		 </div>
+		</div>
+		
+		<div class = "map"> 
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13234.
+			308227931033!2d18.687210730991566!3d-33.9777087900184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+			1!3m3!1m2!1s0x1dcc4e63c9f76277%3A0xc0457a23c455f860!2sFNB%20Bank%20ATM%20Austinville%20Supermarket!5e0!3m2!1sen!2sza!4v1653995491837!5m2!1sen!2sza"
+			width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+	
+	
+	<section id = "detailsForm">
+		<form action = "feedback.php" method = "POST"> 
+			<span> LEAVE A MESSAGE </span>
+			<h2> We love to hear from you </h2>
+			<input type = "text" name = "name" placeholder = "Your Name">
+			<input type = "email" name = "email" placeholder = "E-mail">
+			<input type = "text" name = "subject" placeholder = "Subject">
+			<textarea name = "query" id = "" cols = "30" rows = "10" placeholder = "Your Message"></textarea>
+			<button type = "submit" name = "submit" class = "normal"> Submit </button>
+		</form>
+	</section>
+	
+	
+	<section id = "nletter" class = "section1 sectionM1">
+		<div class = "ntext">
+			<h4> Sign Up For Our Newsletters</h4>
+			<p> Get E-mail updates on our latest stock and <span> deals! </span></p>
+		</div>
+		<div class = "form">
+		<form action = "message.php" method = "POST">
+			<input type = "email" name = "eName" placeholder = "Your email address"> 
+			<button type = "submit" name = "submit" class = "normal"> Sign Up </button>
+		</div>
+		</form> 
+	</section>
+	
+	
+	<footer class = "section1">
+		<div class = "column">
+			<h4> Content </h4>
+			<p> <strong>Address:</strong> Vineyard Ave & Valley Road, Blackheath, Cape Town, 7580, South Africa</p>
+			<p> <strong>Phone:</strong> 021 905 1530 </p>
+			<p> <strong>Hours:</strong> 9:00 - 16:30, Mon - Fri </p>
+			<div class = "following">
+				<h4> Follow Us </h4>
+				<div class = "icon">
+					<i class = "fab fa-facebook-f"></i>
+					<i class = "fab fa-twitter"></i>
+					<i class = "fab fa-instagram"></i>
+					<i class = "fab fa-pinterest-p"></i>
+					<i class = "fab fa-youtube"></i>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "column">
+			<h4> About </h4>
+			<a href = "about.html"> About Us </a>
+			<a href = "checkout.php"> Delivery Information </a>
+			<a href = "#"> Privacy Policy </a>
+			<a href = "#"> Terms and Conditions </a>
+			<a href = "contact.html"> Contact Us </a>
+		</div>
+		
+		<div class = "column">
+			<h4> My Account </h4>
+			<a href = "register.php"> Sign Up </a>
+			<a href = "cart.php"> View Cart </a>
+			<a href = "cart.php"> My Wishlist </a>
+			<a href = "checkout.php"> Track My Order </a>
+			<a href = "contact.html"> Help </a>
+		</div>
+		
+		<div class = "column installing">
+			<h4> Install App </h4>
+			<p> From App Store or Google Play </p>
+			<div class = "rows">
+			<img src = "images/footer/apps.png" alt = "">
+			</div>
+			<p> Secure Payment Gateways </p>
+			<img src = "images/footer/payment.png" alt = "">
+		</div>
+		<div class = "copyright">
+			<p> @ 2022, My Ecommerce Website </p>
+		</div>
+	</footer>
+	
+	
+	
+	
+	<script src = "script.js"></script>
+</body>
+
+</html>
