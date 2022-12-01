@@ -1,0 +1,175 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hello",
+                "Hey",
+                "Hi",
+                "Good day",
+                "Morning",
+                "Afternoon",
+                "Good morning",
+                "Good afternoon"
+            ],
+            "responses": [
+                "Hey",
+                "Hi :)",
+                "Welcome",
+                "Welcome to Lush Activewear, what can I do for you today?"
+            ]
+        },
+
+        {
+            "tag": "smallTalk",
+            "patterns": [
+                "How are you?",
+                "How you?",
+                "I am fine, thank you and you?",
+                "How you doing"
+            ],
+            "responses": [
+                "Im great, thank you for asking!",
+                "Im doing great!",
+                "Im awesome!",
+                "As a bot I feel fantastic!",
+                ":)"
+            ]
+        },
+
+        {
+            "tag": "about",
+            "patterns": [
+                "What is your company?",
+                "Why have you created this company?",
+                "Tell me about your company",
+                "What does your company stand for?"
+            ],
+            "responses": [
+                "We are a South African based company who specializes in accommodating gymwear clothing for women of all shapes and sizes. So that you can feel confident, comfortable and stylish!"
+            ]
+        },
+
+        {
+            "tag": "products",
+            "patterns": [
+                "What do you sell?",
+                "What is your merchandise?",
+                "What products do you have?",
+                "What are your products?",
+                "What stock do you have?"
+            ],
+            "responses": [
+                "We sell comfortable, affordable, and the latest sports wear fashion for women"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+            ]
+        },
+
+        {
+            "tag": "time",
+            "patterns": [
+                "Till when are you open?",
+                "Hours of operation?",
+                "When do you close?",
+                "When do you open?",
+                "Closing time?",
+                "Opening time"
+            ],
+            "responses": [
+                "We are open during the week and weekend from 8:00am - 4:30pm"
+            ]
+        },
+
+        {
+            "tag": "delivery",
+            "patterns": [
+                "How long does your delivery take?",
+                "Delivery time?",
+                "Delivery fee?",
+                "Do you charge for delivery?",
+                "Delivery charges"
+            ],
+            "responses": [
+                "Delivery takes between 2 to 4 business days depending on your location and charges may vary."
+            ]
+        },
+
+        {
+            "tag": "payment",
+            "patterns": [
+                "Do you accept card payments?",
+                "Card or cash payments?",
+                "How do we make payments?",
+                "How do I pay?"
+            ],
+            "responses": [
+                "Our company only accepts cash payments on delivery"
+            ]
+        },
+
+        {
+            "tag": "place",
+            "patterns": [
+                "Where are you placed?",
+                "Where are you located?",
+                "Location?",
+                "Store location?"
+            ],
+            "responses": [
+                "We are a South African based company, located in Cape Town"
+            ]
+        },
+
+        {
+            "tag": "motivate",
+            "patterns": [
+                "Motivate me",
+                "Please give me some motivation",
+                "Make my day",
+                "Inspire me!"
+            ],
+            "responses": [
+                "Do not let other define you but yourself!",
+                "Love your body because you only have one",
+                "Your body loves you, love it back",
+                "Be you always!",
+                "Im proud of you and all you accomplished!",
+                "Your weight does not define you worth, so show the world who you are!",
+                "Feeling confident and comfortable in your own skin is what really makes you beautiful"
+            ]
+        },
+
+        {
+            "tag": "thanking",
+            "patterns": [
+                "Thank you!",
+                "Thanks",
+                "Appreciate your assistance",
+                "thanks for your help"
+            ],
+            "responses": [
+                "Your welcome",
+                "Glad I could help",
+                "Anytime :)",
+                "No problem!"
+            ]
+        },
+
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "Later"
+            ],
+            "responses": [
+                "Thank you for visiting and shopping with us!",
+                "Bye, have a nice day further",
+                "Goodbye",
+                "Bye! We hope to see you again soon"
+            ]
+        }
+
+
+    ]
+}
